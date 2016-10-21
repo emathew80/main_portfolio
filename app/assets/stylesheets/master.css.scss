@@ -1,2 +1,139 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Pavanam&subset=latin-ext,tamil';
+
+
+/* ------------------NAVBAR CSS START---------------------- */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+   
+}
+
+li {
+    float: left;
+
+}
+
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    
+}
+/* ------------------NAVBAR CSS START END---------------------- */
+
+body {
+   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Pavanam', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 100px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.red {
+  height: 1px;
+  background-color: #F55B5B;
+  border: none;
+  width: 100px;
+  }
+
+.bio {
+  color: white;
+}
+
+.profile_photo {
+  height: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  margin-top: 40px;
+
+}
+
+.about {
+  background-color: rgba(173,173,173,0.9);
+  border-radius: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.about-container {
+  background: url('bg.jpg') no-repeat center center fixed;
+  height: 700px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.light-red {
+  border-top: 1px double #F55B5B;
+  width: 250px;
+  
+}
+
+.box {
+  float: left;
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 80px;
+}
+
+.clear {
+  clear:both;
+}

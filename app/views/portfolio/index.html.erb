@@ -1,1 +1,137 @@
-<h1> hello portfolio </h1>
+<html> 
+
+  <head>
+  <link rel="stylesheet" type="text/css" href= "style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pavanam&subset=latin-ext,tamil" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon1.png">
+  <link 
+      rel="stylesheet" 
+      href="prism-atom-dark.css" 
+      type="text/css" 
+      media="screen" 
+    />
+
+    <script type="text/javascript" src="/assets/prism.js"></script>
+    <script type="text/javascript" src="/assets/prism.ruby.js"></script>
+  </head>
+
+  <body>
+    <div class= "about-container">
+      <div class="about">
+        <img src= "/assets/me.jpg" class= "profile_photo" />
+        <h1>Elson Mathew</h1>
+        <h2>SOFTWARE ENGINEER</h2>
+        <hr class= "red"/>
+        <p class= "bio">
+           Elson Mathew is an aspiring software engineer. He graduated in 2014 with his Bachelors of Science in Neuroscience and Behavioral Biology from Emory University and began his journey into software engineering in the fall of 2016. Elson Mathew has held jobs in retail, technology, science, and public service. Elson is currently employed with American Medical Response as an Emergency Medical Technician while in pursuit of his passion to be a fullstack Ruby on Rails Developer. Elson's goal is to mix his passion for web development with his fascination for medicine. In the meantime, he hopes to publish a webdev and medicine blog.
+        </p>
+        <br/>
+        <br/>
+     </div>
+    </div>
+
+<a name="codesnippets"></a>
+    <h3>Code Snippets</h3>
+    <hr class= "light-red">
+
+    <div class= "box">
+      <h4> Temperature Conversion</h4>
+      <p>
+        In this program, the user will be prompted for a tempurature in degrees Celsius, and the program will convert the input into degrees Fahrenheit.
+      </p>
+    </div>
+
+    <div class= "box">
+          <pre><code class="language-ruby">
+puts &quot;Enter degrees in Celsius to convert into Fahrenheit&quot;
+      celsius = gets.to_f 
+      def conversion (degrees_celsius) 
+      final_conversion = (degrees_celsius * 1.8) +32 
+      return final_conversion 
+      end 
+
+      puts &quot;#{celsius} degrees Celsius is #{conversion(celsius)} in Fahrenheit.&quot; </code></pre>
+
+    </div>
+
+    <br class= "clear" />
+
+    <div class="box">
+  <pre><code class="language-ruby">def append_ordinal_suffix(num)
+  right_most_digit = num % 10
+  case right_most_digit
+  when 1  
+    puts &quot;#{num}st&quot;
+  when 2
+    puts &quot;#{num}nd&quot;
+  when 3
+    puts &quot;#{num}rd&quot;
+  else
+    puts &quot;#{num}th&quot;
+  end
+end
+
+def over_one_hundred(hundedths_digit) 
+  right_most_digit_over_hundred = hundedths_digit % 100
+  
+  if right_most_digit_over_hundred &gt; 10 &amp;&amp; right_most_digit_over_hundred &lt; 15
+    puts &quot;#{hundedths_digit}th&quot;
+  else 
+    append_ordinal_suffix(hundedths_digit)
+  end
+end
+
+puts &quot;Please enter a number.&quot; 
+user_input = gets.to_i 
+
+if user_input &gt; 100 
+  over_one_hundred(user_input)
+elsif user_input &lt;=10 || user_input &gt; 14 
+elsif user_input &gt;=11 &amp;&amp; user_input &lt;= 14 
+  puts &quot;#{user_input}th&quot; 
+end</code></pre>
+    </div>
+
+    <div class="box">
+      <h4>Ordinal Challenge</h4>
+      <p>
+      In this program, Ruby will convert a plain number to the number with the respective ordinal. For example, Ruby will convert the input of 2 into 2nd, if the user enters 3, it will display 3rd, etc.
+      </p>
+
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4>FooBar Challenge</h4>
+      <p>
+      This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the FooBar pattern.
+      </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;How many items do you want to see?&quot;
+num_of_elements = gets.to_i
+array = []
+  
+num_of_elements.times do |index|
+  value = index + 1
+  
+  if value % 3 == 0 &amp;&amp; value % 5 == 0
+   value = &quot;FooBar&quot;
+    puts value
+  elsif value % 3 == 0
+   value = &quot;Foo&quot;
+    puts value
+  elsif value % 5 == 0 
+   value = &quot;Bar&quot;
+    puts value
+  else
+    puts value
+  end
+  array.push(value)
+end </code></pre>
+    </div>
+  </body>
+
+</html>
