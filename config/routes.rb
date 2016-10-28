@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'portfolio#index'
+  get 'codesnippets', to: "portfolio#codesnippets"
   resources :blog 
     #resources :comments, only: :create
     #resources :photos, only: :create

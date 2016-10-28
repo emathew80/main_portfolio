@@ -8,14 +8,17 @@
 </head>
 <body>
 <!-- Nav bar start-->
+<nav class="navbar-fixed-top">
 <ul>
   <li style="float:right"><a class="active" href="#about">Resume</a></li>
   <li style="float:right"><%= link_to 'My Blog', blog_index_path %></li>
   <li style="float:right"><a class="active" href="#about">Contact Me</a></li>
   <li style="float:right"><a class="active" href="#about">My Web Apps</a></li>
-  <li style="float:right"><a class="active" href="#codesnippets">Code Snippets</a></li>
-  <li style="float:right"><a class="active" href="#about">About</a></li>
+  <li style="float:right"> <%= link_to 'Code Snippets', codesnippets_path(:anchor => "codesnippets") %>
+</li>
+  <li style="float:right"><%= link_to 'About', root_path %></li>
 </ul>
+</nav>
 
 <!-- Nav bar end-->
 
