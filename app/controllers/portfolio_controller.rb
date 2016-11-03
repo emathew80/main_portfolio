@@ -5,7 +5,9 @@ class PortfolioController < ApplicationController
 
   def codesnippets
     redirect_to :action => 'index', :anchor => "codesnippets"
+  end
 
- 
+  def mywebapps
+    redirect_to :action => 'index', :anchor => "mywebapps"
   end
 end
