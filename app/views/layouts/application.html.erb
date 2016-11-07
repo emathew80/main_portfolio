@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <!-- Nav bar start-->
@@ -13,8 +14,8 @@
   <li style="float:right"><a class="active" href="#about">Resume</a></li>
   <li style="float:right"><%= link_to 'My Blog', blogs_path %></li>
   <li style="float:right"><a class="active" href="#about">Contact Me</a></li>
-  <li style="float:right"><%= link_to 'My Web Apps', mywebapps_path(:anchor => "mywebapps") %></li>
-  <li style="float:right"><%= link_to 'Code Snippets', codesnippets_path(:anchor => "codesnippets") %>
+  <li style="float:right"><%= link_to 'My Web Apps', root_path(anchor: "mywebapps") %></li>
+  <li style="float:right"><%= link_to 'Code Snippets', root_path(anchor: "codesnippets") %>
 </li>
   <li style="float:right"><%= link_to 'About', root_path %></li>
 </ul>
