@@ -19,6 +19,11 @@ class BlogsController < ApplicationController
     @medium_data = posts
   end
   def show
+    show = []
+    @medium_data.each do |post|
+      post.each_with_index
+      @show = post
+    end
   end
   def codesnippets
     redirect_to root_path
@@ -44,7 +49,8 @@ private
     hash = hash['payload']['value']
     our_hash['title'] = hash['title']
     epoch = hash['latestPublishedAt'].to_s[0..9]
-    our_hash['latestPublishedAt'] = DateTime.strptime(epoch,'%s')
+    epoch_to_standard = Time.strptime(epoch, '%s')
+    our_hash['latestPublishedAt'] = epoch_to_standard.strftime('%B %d, %Y')
     our_hash['content'] = hash['content']['bodyModel']['paragraphs']
     return our_hash
   end

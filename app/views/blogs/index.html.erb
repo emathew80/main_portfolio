@@ -1,8 +1,10 @@
 <br/>
-<%= @medium_data.each do |post| %>
+<% @medium_data.each do |post| %>
   <h1 class="graf graf--h3 graf--leading graf--title" style="color:red"> <%= post['latestPublishedAt']%> <%= post['title'] %> </h1>
-    <%= post['content'].each_with_index do |text, index| %>
-        <% if index.even? %>
+    <% post['content'].each_with_index do |text, index| %>
+        <% if index == 0 %>
+            <% next %>
+        <% elsif index.even? %>
             <%= text['text'] %>
         <% else %>
             <%= text['text'] %>
