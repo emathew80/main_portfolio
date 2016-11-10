@@ -16,7 +16,7 @@ class BlogsController < ApplicationController
       posts.push(our_hash)
     end
 
-    @result = posts
+    @medium_data = posts
   end
   def show
   end
