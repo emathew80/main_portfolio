@@ -3,28 +3,35 @@ require 'date'
 
 class BlogsController < ApplicationController
   def index
-    hash = getListOfPostsHash("https://medium.com/feed/@emathew.dev")
-    posts = hash['rss']['channel']['item']
-    links = []
-    posts.each do |post|
-      links.push(post['link'].split("?")[0]+"?format=json")
-    end
     posts = []
-    links.each do |link|
-      hash = getPostHash(link)
-      our_hash = get_our_hash(hash)
-      posts.push(our_hash)
+    begin
+      hash = getListOfPostsHash("https://medium.com/feed/@emathew.dev")
+      posts = hash['rss']['channel']['item']
+      links = []
+      posts.each do |post|
+        links.push(post['link'].split("?")[0]+"?format=json")
+      end
+      posts = []
+      links.each do |link|
+        hash = getPostHash(link)
+        our_hash = get_our_hash(hash)
+        posts.push(our_hash)
+        post = Post.find_or_create_by!(title: our_hash['title'])
+        post.update!(content: our_hash['content'].to_s, pub_date: our_hash['latestPublishedAt'])
+      end
+    rescue Exception => e
+      puts e #TODO: log this in the DB later
+    ensure
+      posts = Post.all.order(pub_date: :desc)
     end
 
     @medium_data = posts
   end
+
   def show
-    show = []
-    @medium_data.each do |post|
-      post.each_with_index
-      @show = post
-    end
+   @post = Post.find(params[:id])
   end
+  
   def codesnippets
     redirect_to root_path
  
@@ -72,6 +79,4 @@ private
     json = http.get(uri.request_uri).body.split("])}while(1);</x>")[1]
     return JSON.parse(json)
   end
-
-
 end

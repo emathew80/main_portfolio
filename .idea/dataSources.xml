@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1172028850">
+    <data-source source="LOCAL" name="Rails main_portfolio: test" uuid="cf3ad4cd-353d-4f1c-b3ca-8730aee45513">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/main_portfolio_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails main_portfolio: production" uuid="98fb21d2-3301-4ea1-8429-771c48944041">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/main_portfolio_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails main_portfolio: development" uuid="fa9aabba-3267-4510-ada0-b90dd7f52664">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/main_portfolio_development</jdbc-url>
+    </data-source>
+  </component>
+</project>

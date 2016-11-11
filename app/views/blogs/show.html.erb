@@ -1,3 +1,11 @@
 <br/>
-
-<h1><%= @show %> </h1>
+<br/>
+<br/>
+<% @post.hash.each_with_index do |text, index| %>
+    <% if index.even? %>
+        <%= text['text'] %>
+    <% else %>
+        <%= text['text'] %>
+    <% end %>
+    <br/>
+<% end %>

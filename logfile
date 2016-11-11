@@ -3,3 +3,9 @@ LOG:  MultiXact member wraparound protections are now enabled
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
 FATAL:  database "main_portfolio_development" does not exist
+ERROR:  database "main_portfolio_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "main_portfolio_development"
+ERROR:  database "main_portfolio_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "main_portfolio_development"
