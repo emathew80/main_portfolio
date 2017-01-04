@@ -114,14 +114,33 @@ p {
   float: left;
   width: 42.5%;
   margin-left: 5%;
-  margin-top: 80px;
+
+
+}
+.webapps-container{
+  background: url('bg.jpg') no-repeat center center fixed;
+  height: 700px;
+  margin-top: 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.webappbox{
+  background-color: rgba(173,173,173,0.9);
+  border-radius: 0px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  height:700px;
 }
 
 .clear {
   clear:both;
 }
 .white {
-  color: gainsboro;
+  color: grey;
   font-size: 38px;
 }
 .blue{
@@ -131,7 +150,7 @@ p {
 .foodster {
   color: #F7B10C; /* foodster brand color */
   font-family: 'Chewy', cursive;
-  font-size: 38px;
+  font-size: 45px;
   letter-spacing: -0.5px;
   transition: all 0.5s ease;
 }
