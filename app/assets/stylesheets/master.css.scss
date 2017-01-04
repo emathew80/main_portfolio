@@ -1,46 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Pavanam&subset=latin-ext,tamil';
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Chewy|Lobster|Orbitron|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
 
 
 /* ------------------NAVBAR CSS START---------------------- */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-    color: white;
-
-   
-}
-
-li {
-    float: left;
-
-}
 
 
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-
-.active {
-    
-}
 /* ------------------NAVBAR CSS START END---------------------- */
+
+
+
+
 
 body {
    
@@ -109,7 +82,7 @@ p {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: -50px;
   margin-bottom: auto;
   text-align: center;
   padding: 20px;
@@ -119,6 +92,7 @@ p {
 .about-container {
   background: url('bg.jpg') no-repeat center center fixed;
   height: 700px;
+  margin-top: 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -145,6 +119,31 @@ p {
 
 .clear {
   clear:both;
+}
+.white {
+  color: gainsboro;
+  font-size: 38px;
+}
+.blue{
+  color: #56AECC;
+  font-size: 38px;
+}
+.foodster {
+  color: #F7B10C; /* foodster brand color */
+  font-family: 'Chewy', cursive;
+  font-size: 38px;
+  letter-spacing: -0.5px;
+  transition: all 0.5s ease;
+}
+.span {
+  font-size: 38px;
+}
+
+.splurty {
+  color:red;
+  font-family: 'Lemonada', cursive;
+  letter-spacing: -1px;
+  font-size: 36px;
 }
 
 

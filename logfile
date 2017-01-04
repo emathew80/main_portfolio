@@ -9,3 +9,26 @@ STATEMENT:  DROP DATABASE IF EXISTS "main_portfolio_development"
 ERROR:  database "main_portfolio_development" is being accessed by other users
 DETAIL:  There is 1 other session using the database.
 STATEMENT:  DROP DATABASE IF EXISTS "main_portfolio_development"
+FATAL:  role "helloworld" does not exist
+ERROR:  database "helloworld_development" already exists
+STATEMENT:  CREATE DATABASE "helloworld_development" ENCODING = 'unicode'
+ERROR:  database "helloworld_test" already exists
+STATEMENT:  CREATE DATABASE "helloworld_test" ENCODING = 'unicode'
+FATAL:  role "helloworld" does not exist
+ERROR:  role "postgres" already exists
+STATEMENT:  CREATE ROLE postgres SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+ERROR:  database "helloworld_development" already exists
+STATEMENT:  CREATE DATABASE "helloworld_development" ENCODING = 'unicode'
+ERROR:  database "helloworld_test" already exists
+STATEMENT:  CREATE DATABASE "helloworld_test" ENCODING = 'unicode'
+FATAL:  role "helloworld" does not exist
+ERROR:  role "postgres" already exists
+STATEMENT:  CREATE ROLE postgres SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+ERROR:  database "helloworld_development" already exists
+STATEMENT:  CREATE DATABASE "helloworld_development" ENCODING = 'unicode'
+ERROR:  database "helloworld_test" already exists
+STATEMENT:  CREATE DATABASE "helloworld_test" ENCODING = 'unicode'
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
