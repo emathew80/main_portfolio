@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   root 'portfolio#index'
-  get 'codesnippets', to: "portfolio#codesnippets"
-   get 'mywebapps', to: "portfolio#mywebapps"
+
+  resources :portfolio do
+      get :download
+  end
+
   resources :blogs 
-    #resources :comments, only: :create
-    #resources :photos, only: :create
-  
-      #resources :users, only: :show
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
