@@ -56,25 +56,11 @@ p {
   text-align: center;
 }
 
-.red {
-  height: 1px;
-  background-color: #F55B5B;
-  border: none;
-  width: 100px;
-  }
 
-.bio {
-  color: white;
-}
 
-.profile_photo {
-  height: 150px;
-  border-radius: 100%;
-  border-style: solid;
-  border-color: white;
-  margin-top: 40px;
 
-}
+
+
 
 .about {
   background-color: rgba(173,173,173,0.9);
@@ -100,29 +86,105 @@ p {
 
 }
 
-.light-red {
-  border-top: 1px double #F55B5B;
-  width: 250px;
-  
-}
 
-.grammbles {
-  color: #3A68E8;
-  font-size: 35px;
-  font-family: 'Bungee Shade', cursive;
+.bio {
+  color: white;
 }
-
-.override{
-  color: black;
+.blue{
+  color: #56AECC;
+  font-size: 38px;
 }
 
 .box {
   float: left;
   width: 42.5%;
   margin-left: 5%;
+}
 
+.clear {
+  clear:both;
+}
+
+.contact-headline {
+  color: white;
+}
+
+.contact-info {
+  color: white;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.contact-link {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.contact-me {
+  height: 350px;
+  background-color: #202020;
+  padding-top: 30px;
 
 }
+
+.foodster {
+  color: #F7B10C; /* foodster brand color */
+  font-family: 'Chewy', cursive;
+  font-size: 45px;
+  letter-spacing: -0.5px;
+  transition: all 0.5s ease;
+}
+.grammbles {
+  color: #3A68E8;
+  font-size: 35px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.icons {
+  text-align: center;
+  margin: 30px 0;
+
+}
+
+.light-red {
+  border-top: 1px double #F55B5B;
+  width: 250px;
+}
+
+.override{
+  color: black;
+}
+
+.profile_photo {
+  height: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  margin-top: 40px;
+}
+.red {
+  height: 1px;
+  background-color: #F55B5B;
+  border: none;
+  width: 100px;
+}
+
+.skills-and-tools {
+  max-width: 400px;
+  margin: 40px auto;
+}
+.span {
+  font-size: 38px;
+}
+
+.splurty {
+  color:red;
+  font-family: 'Lemonada', cursive;
+  letter-spacing: -1px;
+  font-size: 36px;
+}
+
 .webapps-container{
   background: url('bg.jpg') no-repeat center center fixed;
   height: 700px;
@@ -141,34 +203,9 @@ p {
   margin-right: auto;
   height:700px;
 }
-
-.clear {
-  clear:both;
-}
 .white {
   color: grey;
   font-size: 38px;
-}
-.blue{
-  color: #56AECC;
-  font-size: 38px;
-}
-.foodster {
-  color: #F7B10C; /* foodster brand color */
-  font-family: 'Chewy', cursive;
-  font-size: 45px;
-  letter-spacing: -0.5px;
-  transition: all 0.5s ease;
-}
-.span {
-  font-size: 38px;
-}
-
-.splurty {
-  color:red;
-  font-family: 'Lemonada', cursive;
-  letter-spacing: -1px;
-  font-size: 36px;
 }
 
 
